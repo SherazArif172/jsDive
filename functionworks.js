@@ -9,5 +9,3 @@ function a() {
 function b() {
   console.log("this is b");
 }
-
-kjsdhf;
