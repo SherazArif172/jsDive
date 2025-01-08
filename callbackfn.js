@@ -10,3 +10,8 @@ function a(y) {
 a(function y() {
   console.log("y");
 });
+
+let count = 0;
+document.getElementById("buttons").addEventListener("click", function a() {
+  console.log("im clicked", ++count);
+});
