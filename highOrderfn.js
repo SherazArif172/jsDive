@@ -25,3 +25,9 @@ const calculate = function (radius, logic) {
 };
 
 console.log(calculate(radius, areaa));
+
+const calcius = function (calciuss) {
+  return (calciuss * 9) / 5 + 32;
+};
+
+console.log(calcius(3));
