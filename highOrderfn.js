@@ -12,27 +12,38 @@ const radius = [2, 4, 6, 7];
 
 // but if we want to make it DRY Dont repeat youreself
 
-const areaa = function (radius) {
-  return Math.PI * radius * radius;
-};
+// const areaa = function (radius) {
+//   return Math.PI * radius * radius;
+// };
 
-const calculate = function (radius, logic) {
-  const output = [];
-  for (let index = 0; index < radius.length; index++) {
-    output.push(logic(radius[index]));
-  }
-  return output;
-};
+// const calculate = function (radius, logic) {
+//   const output = [];
+//   for (let index = 0; index < radius.length; index++) {
+//     output.push(logic(radius[index]));
+//   }
+//   return output;
+// };
 
-console.log(calculate(radius, areaa));
+// console.log(calculate(radius, areaa));
 
-const calcius = function (calciuss) {
-  return (calciuss * 9) / 5 + 32;
-};
+// const calcius = function (calciuss) {
+//   return (calciuss * 9) / 5 + 32;
+// };
 
-console.log(calcius(3));
-const areaOfRectengular = function (l, w) {
-  return 2 * (l + w);
-};
+// console.log(calcius(3));
+// const areaOfRectengular = function (l, w) {
+//   return 2 * (l + w);
+// };
 
-console.log(areaOfRectengular(3, 4));
+// console.log(areaOfRectengular(3, 4));
+
+// const quadratic = function (a, b, c) {
+//   const discre = b * b - 4 * a * c;
+//   if (discre < 0) {
+//     return " not a real number ";
+//   } else {
+//     return (-b + Math.sqrt(discre)) / (2 * a);
+//   }
+// };
+
+// console.log(quadratic(1, -4, 1));
