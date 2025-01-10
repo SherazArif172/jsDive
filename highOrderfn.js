@@ -15,6 +15,9 @@ const radius = [2, 4, 6, 7];
 // const areaa = function (radius) {
 //   return Math.PI * radius * radius;
 // };
+// const qatar = function (radius) {
+//   return Math.PI * radius * radius;
+// };
 
 // const calculate = function (radius, logic) {
 //   const output = [];
@@ -24,7 +27,7 @@ const radius = [2, 4, 6, 7];
 //   return output;
 // };
 
-// console.log(calculate(radius, areaa));
+// console.log(calculate(radius, qatar));
 
 // const calcius = function (calciuss) {
 //   return (calciuss * 9) / 5 + 32;
