@@ -31,3 +31,8 @@ const calcius = function (calciuss) {
 };
 
 console.log(calcius(3));
+const areaOfRectengular = function (l, w) {
+  return 2 * (l + w);
+};
+
+console.log(areaOfRectengular(3, 4));
