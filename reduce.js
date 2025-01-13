@@ -9,3 +9,5 @@ Array.prototype.myreduce = function () {
 };
 
 console.log(num.myreduce());
+
+num.filter();
