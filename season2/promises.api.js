@@ -1,11 +1,11 @@
 const p1 = new Promise(function (resolve, reject) {
   setTimeout(() => {
-    resolve("p1 succes");
+    reject("p1 rejected");
   }, 3000);
 });
 const p2 = new Promise(function (resolve, reject) {
   setTimeout(() => {
-    resolve("p2 succes");
+    reject("p2 rejected");
   }, 2000);
 });
 const p3 = new Promise(function (resolve, reject) {
@@ -16,4 +16,4 @@ const p3 = new Promise(function (resolve, reject) {
 
 Promise.any([p1, p2, p3])
   .then((res) => console.log(res))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err), console.log(err.errors));
