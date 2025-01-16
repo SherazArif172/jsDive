@@ -5,7 +5,7 @@ const p1 = new Promise(function (resolve, reject) {
 });
 const p2 = new Promise(function (resolve, reject) {
   setTimeout(() => {
-    resolve("p1 succes");
+    resolve("p2 succes");
   }, 2000);
 });
 const p3 = new Promise(function (resolve, reject) {
@@ -14,6 +14,6 @@ const p3 = new Promise(function (resolve, reject) {
   }, 1000);
 });
 
-Promise.race([p1, p2, p3])
+Promise.any([p1, p2, p3])
   .then((res) => console.log(res))
   .catch((err) => console.log(err));
