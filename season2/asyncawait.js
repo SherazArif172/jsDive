@@ -1,5 +1,7 @@
 const p = new Promise((resolve, reject) => {
-  resolve("value is this");
+  setTimeout(() => {
+    resolve("value is this");
+  }, 10000);
 });
 
 // returning promise
@@ -26,4 +28,5 @@ dataa();
 
 async function dataaa() {
   return await p.then((res) => console.log(res));
+  console.log("helow world");
 }
