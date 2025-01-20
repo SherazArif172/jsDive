@@ -1,5 +1,9 @@
+const p = new Promise((resolve, reject) => {
+  resolve("value is this");
+});
+
 async function namee() {
-  return "ali ijaz";
+  return p;
 }
 
 const dataPromsie = namee();
