@@ -1,11 +1,20 @@
 // globl env
 
-console.log(this);
+// console.log(this);
 
-// this inside a function
+// // this inside a function
 
-function any() {
-  console.log(this);
-}
+// function any() {
+//   console.log(this);
+// }
 
-any();
+// any();
+
+const obj = {
+  a: 10,
+  x: function () {
+    console.log(this);
+  },
+};
+
+obj.x();
