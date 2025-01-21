@@ -28,8 +28,11 @@
 const obj = {
   a: 10,
   x: function () {
-    const y = () => {
-      console.log(this);
+    const y = function () {
+      const z = () => {
+        console.log(this);
+      };
+      z();
     };
     y();
   },
